@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reulin's Bakes</title>
+    <link rel="stylesheet" href="style.css" />
+  
+       <style>
+        #about  {
+         
+            color: yellow;
+        }
+        li{
+            color:aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            padding: 10px;
+        }
+        p{
+            text-align: center; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+        }
+    
+        #menuList{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        #menuList li{
+    color:maroon;
+    border: solid 2px;
+    width:  90%;
+    background-color: bisque;
+    padding: 1px;
+    margin-left: 1px;
+    visibility: hidden;
+    list-style-type: none;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+    #menuImg:hover #menuList li{
+    visibility: visible;
+    
+}
+#menuList li:hover{
+    background-color: aquamarine;
+}
+#menuList li a{
+    text-decoration: none;
+    color: maroon;
+}
+.goodielist{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+}
+.goodielist li{
+    color:maroon;
+    border: solid 2px;
+    width:  90%;
+    background-color: bisque;
+    padding: 1px;
+    margin-left: 1px;
+    visibility: hidden;
+    list-style-type: none;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+.items:hover .goodielist li{
+    visibility: visible;
+    
+}
+.goodielist li:hover{
+    background-color: aquamarine;
+}
+.goodielist li a{
+    text-decoration: none;
+    color: maroon;
+}
+.goodielist{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.items{
+    background-color: maroon;
+    width: 10%;
+    display: inline-block;
+    
+    padding: 50px;
+    
+}
+
+    </style>
+  </head>
+  <body>
+    <div style="display:inline-block; background-color: bisque; text-align: center; margin-left: 25%;width:50%;border: solid 2px;">
+  
+        <p style="color:#800000; font-family: cursive; font-weight: bold; font-size:30px;">Reulin's Bakes</p>
+        <p style="color: #800000; font-family: cursive; font-weight: bold; font-size:20px;font-style: italic;">Made with love for everyone</p>
+      </div>
+      <div id="menuImg" style="width: 10%;">
+        <img src="images/donuts_here.png" width=100 height=100 style="bottom:10%; margin-bottom: 0%;" />
+        <ul id="menuList">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="AboutUs.html">About US</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div id="about" style=" border:solid 2px; width: 60%; height: 80%; margin-left: 20%;margin-top:-20%;position: absolute;">
+       <p id="cakes" class="items"  >Cakes</p>
+       <!--<ol id="cakelist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>-->
+       <p id="tarts" class="items"  >Tarts</p>
+       <!--<ol id="cakelist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>-->
+
+       <p id="tarts" class="items"  >Brownies</p>
+       <!--<ol id="cakelist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>-->
+       <p id="tarts" class="items"  >Croissants</p>
+      <!--<ol id="cakelist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>-->
+       <p id="tarts" class="items"  >Macrons</p>
+      <!--<ol id="cakelist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>-->
+       <p id="tarts" class="items"  >Breads</p>
+       <!--<ol id="cakelist" class="goodielist" >
+            <li>
+                chocolate cake
+            </li>
+            <li>
+             Black Forest
+              </li>
+              <li>
+                Pineapple
+             </li>
+        </ol>-->
+        <p id="tarts" class="items"  >Macrons</p>
+        <!--<ol id="cakelist" class="goodielist" >
+             <li>
+                 chocolate cake
+             </li>
+             <li>
+              Black Forest
+               </li>
+               <li>
+                 Pineapple
+              </li>
+         </ol>-->
+    </div>
+  </body>
+</html>

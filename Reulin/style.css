@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background-color: bisque;
+    background-image: url(images/homeimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg{
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 25%;
+ 
+}   
+.bg h1{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: maroon;
+    font-family: cursive;
+    font-weight:bolder;
+    font-style: oblique;
+
+}
+.bg p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: navy;
+    text-decoration: double;
+    font-family: cursive;
+    font-weight:bolder;
+    font-style: oblique;
+
+}
+.main{
+
+   position: relative;
+   display: inline;
+}
+.menuImg{
+    margin-top: -45%;
+}
+.menuList{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+}
+.menuList li{
+    color:maroon;
+    border: solid 2px;
+    width:  8%;
+    background-color: bisque;
+    padding: 1px;
+    margin-left: 1px;
+    visibility: hidden;
+    list-style-type: none;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+.menuImg:hover .menuList li{
+    visibility: visible;
+}
+.menuList li:hover{
+    background-color: aquamarine;
+}
+.menuList li a{
+    text-decoration: none;
+    color: maroon;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    position:relative;
+}
+.item p{
+    position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
+.item:hover img{
+    opacity:.33;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reulin's Bakes</title>
+    <link rel="stylesheet" href="style.css" />
+  
+       <style>
+        #about  {
+         
+            color: yellow;
+        }
+        li{
+            color:aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            padding: 10px;
+        }
+        p{
+            text-align: center; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+        }
+    
+        #menuList{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        #menuList li{
+    color:maroon;
+    border: solid 2px;
+    width:  90%;
+    background-color: bisque;
+    padding: 1px;
+    margin-left: 1px;
+    visibility: hidden;
+    list-style-type: none;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+    #menuImg:hover #menuList li{
+    visibility: visible;
+    
+}
+#menuList li:hover{
+    background-color: aquamarine;
+}
+#menuList li a{
+    text-decoration: none;
+    color: maroon;
+}
+
+    </style>
+  </head>
+  <body>
+    <div style="display:inline-block; background-color: bisque; text-align: center; margin-left: 25%;width:50%;border: solid 2px;">
+  
+        <p style="color:#800000; font-family: cursive; font-weight: bold; font-size:30px;">Reulin's Bakes</p>
+        <p style="color: #800000; font-family: cursive; font-weight: bold; font-size:20px;font-style: italic;">Made with love for everyone</p>
+      </div>
+      <div id="menuImg" style="width: 10%;">
+        <img src="images/donuts_here.png" width=100 height=100 style="bottom:10%; margin-bottom: 0%;" />
+        <ul id="menuList">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="AboutUs.html">About US</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div id="about" style=" border:solid 2px; width: 60%; height: 80%; margin-left: 20%;margin-top:-20%;position: absolute;">
+      <p>We are not just a bakery, we are not just bakers. 
+          <br/>In fact, we are just like you, a bunch of food 
+          <br/>lovers fascinated with sweet indulgence, who dreamt of creating an appetizing fairy land of divine delicacies that relishes the utmost desires.</p>
+    <ol>
+        <li>
+            Beginning with finest flour mixed with our passion, sprinkling some sugar and butter, blending it with our deepest emotions to create a perfect batter. 
+            <br/>Kindling it in the oven with our warmth and finally crafting the intricate creations in the form of some lip-smacking cakes, which are out of this world! 
+            <br/>The only additives you’ll find in our products are an extra pinch of love, care and devotion!
+        </li>
+        <li>
+
+            We add our magical touch to our recipe, to bring out the flavor and oomph into everything. 
+            With fresh ingredients and some traditional methods, 
+            <br/>we craft some one-of-a-kind cakes baked-fresh-from-the-oven to excel your taste buds. </li>
+        <li>
+            And then, to fill up each celebratory moment with euphoria and excitement, we put in our heart and soul in delivering the luscious cake at just the right time because we understand!
+            <br/> We understand the emotions attached to the occasion and so, we always make an effort to add to your happy moments.
+        </li>
+    </ol>
+    </div>
+  </body>
+</html>
