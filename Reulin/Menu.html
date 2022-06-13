@@ -51,6 +51,8 @@
 .goodielist{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight: bold;
+            width:20%;
+           
 }
 .goodielist li{
     color:maroon;
@@ -59,14 +61,56 @@
     background-color: bisque;
     padding: 1px;
     margin-left: 1px;
-    visibility: hidden;
+    
     list-style-type: none;
     transition-duration: 1s;
     transition-property: background-color;
-}
-.items:hover .goodielist li{
-    visibility: visible;
     
+  
+}
+.items{
+    background-color: maroon;
+    width: 10%;
+    display: inline-block;
+    border: solid 2px;
+    padding: 50px;
+   
+    
+}
+#cakes:hover.itemdivcake    {
+ 
+    display: block;
+    margin-left: 30%;
+    margin-top: 2%;
+    
+}
+#tarts:hover ~.itemdivtart{
+ 
+ display: block;
+ margin-left: 30%;
+ margin-top: 2%;
+ 
+}
+#brownie:hover ~.itemdivbrownie{
+ 
+ display: block;
+ margin-left: 30%;
+ margin-top: 2%;
+ 
+}
+#croissant:hover ~.itemdivcroissant{
+ 
+ display: block;
+ margin-left: 30%;
+ margin-top: 2%;
+ 
+}
+#macrons:hover ~.itemdivmacron{
+ 
+ display: block;
+ margin-left: 30%;
+ margin-top: 2%;
+ 
 }
 .goodielist li:hover{
     background-color: aquamarine;
@@ -75,19 +119,31 @@
     text-decoration: none;
     color: maroon;
 }
-.goodielist{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-}
-.items{
-    background-color: maroon;
-    width: 10%;
-    display: inline-block;
-    
-    padding: 50px;
-    
-}
 
+.itemdivcake {
+    display: none;
+    margin-left: 100%;
+}
+.itemdivbrownie {
+    display: none;
+    margin-left: 100%;
+}
+.itemdivbread {
+    display: none;
+    margin-left: 100%;
+}
+.itemdivcroissant{
+    display: none;
+    margin-left: 100%;
+}
+.itemdivtart{
+    display: none;
+    margin-left: 100%;
+}
+.itemdivmacron{
+    display: none;
+    margin-left: 100%;
+}
     </style>
   </head>
   <body>
@@ -107,92 +163,112 @@
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
-      <div id="about" style=" border:solid 2px; width: 60%; height: 80%; margin-left: 20%;margin-top:-20%;position: absolute;">
-       <p id="cakes" class="items"  >Cakes</p>
-       <!--<ol id="cakelist" class="goodielist" >
-           <li>
-               chocolate cake
-           </li>
-           <li>
-            Black Forest
-             </li>
-             <li>
-               Pineapple
-            </li>
-       </ol>-->
+      <div id="about" style=" border:solid 2px; width: 60%; height: 80%; margin-left: 20%;margin-top:-20%;position: absolute; ">
+       <p id="cakes" class="items" >Cakes</p>
+      
        <p id="tarts" class="items"  >Tarts</p>
-       <!--<ol id="cakelist" class="goodielist" >
-           <li>
-               chocolate cake
-           </li>
-           <li>
-            Black Forest
-             </li>
-             <li>
-               Pineapple
-            </li>
-       </ol>-->
+      
+       <p id="brownie" class="items"  >Brownies</p>
+       
+       <p id="croissant" class="items"  >Croissants</p>
+      
+        <p id="macrons" class="items"  >Macrons</p>
 
-       <p id="tarts" class="items"  >Brownies</p>
-       <!--<ol id="cakelist" class="goodielist" >
-           <li>
-               chocolate cake
-           </li>
-           <li>
-            Black Forest
-             </li>
-             <li>
-               Pineapple
-            </li>
-       </ol>-->
-       <p id="tarts" class="items"  >Croissants</p>
-      <!--<ol id="cakelist" class="goodielist" >
-           <li>
-               chocolate cake
-           </li>
-           <li>
-            Black Forest
-             </li>
-             <li>
-               Pineapple
-            </li>
-       </ol>-->
-       <p id="tarts" class="items"  >Macrons</p>
-      <!--<ol id="cakelist" class="goodielist" >
-           <li>
-               chocolate cake
-           </li>
-           <li>
-            Black Forest
-             </li>
-             <li>
-               Pineapple
-            </li>
-       </ol>-->
-       <p id="tarts" class="items"  >Breads</p>
-       <!--<ol id="cakelist" class="goodielist" >
-            <li>
-                chocolate cake
-            </li>
-            <li>
-             Black Forest
+       <p id="breads" class="items" >Breads</p>
+      
+        <p id="macrons" class="items"  >Macrons</p>
+        
+    </div>
+    <div class="itemdivcake">
+        <ol id="cakelist" class="goodielist" >
+              <li>
+                  chocolate cake
               </li>
               <li>
-                Pineapple
-             </li>
-        </ol>-->
-        <p id="tarts" class="items"  >Macrons</p>
-        <!--<ol id="cakelist" class="goodielist" >
-             <li>
-                 chocolate cake
-             </li>
-             <li>
-              Black Forest
+               Black Forest
+                </li>
+                <li>
+                  Pineapple
                </li>
-               <li>
-                 Pineapple
-              </li>
-         </ol>-->
+          </ol>
+       </div>
+       <div class="itemdivtart">
+        <ol id="tartlist" class="goodielist" >
+           <li>
+               chocolate cake
+           </li>
+           <li>
+            Black Forest
+             </li>
+             <li>
+               Pineapple
+            </li>
+       </ol>
     </div>
+    <div class="itemdivbrownie">
+        <ol id="brownielist" class="goodielist" >
+              <li>
+                  chocolate cake
+              </li>
+              <li>
+               Black Forest
+                </li>
+                <li>
+                  Pineapple
+               </li>
+          </ol>-->
+       </div>
+       <div class="itemdivcroissant">
+        <ol id="croissantlist" class="goodielist" >
+                <li>
+                    chocolate cake
+                </li>
+                <li>
+                 Black Forest
+                  </li>
+                  <li>
+                    Pineapple
+                 </li>
+             </ol>
+         </div>
+         <div class="itemdivmacron">
+            <ol id="macronlist" class="goodielist" >
+                  <li>
+                      chocolate cake
+                  </li>
+                  <li>
+                   Black Forest
+                    </li>
+                    <li>
+                      Pineapple
+                   </li>
+              </ol>
+              </div>
+              <div class="itemdivbread">
+                <ol id="breadslist" class="goodielist" >
+                        <li>
+                            chocolate cake
+                        </li>
+                        <li>
+                         Black Forest
+                          </li>
+                          <li>
+                            Pineapple
+                         </li>
+                    </ol>
+                    </div>
+                    <div class="itemdivmacron">
+                        <ol id="macronslist" class="goodielist" >
+                           <li>
+                               chocolate cake
+                           </li>
+                           <li>
+                            Black Forest
+                             </li>
+                             <li>
+                               Pineapple
+                            </li>
+                       </ol>
+                      </div>
   </body>
 </html>
